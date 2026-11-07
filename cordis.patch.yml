@@ -1,0 +1,6 @@
+# Bundle overlay for the SurfCore edge adapter. The kind's schema parses `{}`, so mounting the plugin is enough to
+# enable the Source; the SnowLuma endpoint and token are read from SurfCore's own config.json unless the Source
+# settings name another. Disable the `surfcore` Source to stop replies from leaving.
+- insert:
+    - id: dsh-surfcore-adapter
+      name: dsh-surfcore-adapter

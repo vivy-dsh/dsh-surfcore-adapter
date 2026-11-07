@@ -1,0 +1,26 @@
+{
+  "name": "dsh-surfcore-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SurfCore edge adapter: QQ and Bilibili events enter the orchestrator as InputEnvelopes, and replies leave through one ledgered egress.",
+  "license": "MIT",
+  "main": "./src/index.mjs",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "src"
+  ],
+  "dependencies": {
+    "zod": "4.4.3"
+  }
+}
